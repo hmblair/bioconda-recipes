@@ -1,0 +1,104 @@
+recipe_sha: c40ea3b38417b11c9978f772847dbac6d94e8132f0e6e7626f889a4375865687  # The hash of the recipe's meta.yaml at which this recipe failed to build.
+skiplist: true # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
+log: |2-
+      conda_packages = finalize_outputs_pass(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/metadata.py", line 1077, in finalize_outputs_pass
+      fm = finalize_metadata(
+           ^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/render.py", line 722, in finalize_metadata
+      build_unsat, host_unsat = add_upstream_pins(
+                                ^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/render.py", line 507, in add_upstream_pins
+      host_deps, host_unsat, extra_run_specs_from_host = _read_upstream_pin_files(
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/render.py", line 453, in _read_upstream_pin_files
+      deps, precs, unsat = get_env_dependencies(
+                           ^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/render.py", line 162, in get_env_dependencies
+      precs = environ.get_package_records(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/environ.py", line 939, in get_install_actions
+      precs = get_package_records(
+              ^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/environ.py", line 939, in get_install_actions
+      precs = get_package_records(
+              ^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/environ.py", line 939, in get_install_actions
+      precs = get_package_records(
+              ^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/environ.py", line 890, in get_install_actions
+      _actions = _install_actions(prefix, index, specs, subdir=subdir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_build/environ.py", line 1310, in install_actions
+      txn = solver.solve_for_transaction(prune=False, ignore_pinned=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda/core/solve.py", line 156, in solve_for_transaction
+      unlink_precs, link_precs = self.solve_for_diff(
+                                 ^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda/core/solve.py", line 225, in solve_for_diff
+      final_precs = self.solve_final_state(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_libmamba_solver/solver.py", line 179, in solve_final_state
+      out_state = self._solving_loop(in_state, out_state, index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda/common/io.py", line 87, in decorated
+      return f(*args, **kwds)
+             ^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_libmamba_solver/solver.py", line 305, in _solving_loop
+      solved, outcome = self._solve_attempt(in_state, out_state, index, attempt=attempt)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_libmamba_solver/solver.py", line 362, in _solve_attempt
+      new_conflicts = self._maybe_raise_for_problems(outcome, index, out_state, old_conflicts)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/conda_libmamba_solver/solver.py", line 759, in _maybe_raise_for_problems
+      self._maybe_raise_for_conda_build(
+    File "/opt/conda/lib/python3.12/site-packages/conda_libmamba_solver/solver.py", line 849, in _maybe_raise_for_conda_build
+      raise exc
+  conda_libmamba_solver.conda_build_exceptions.ExplainedDependencyNeedsBuildingError: Unsatisfiable dependencies for platform linux-64: {MatchSpec("python==3.13.12=hc97d973_100_cp313"), MatchSpec("python_abi=3.13[build=*_cp313]")}
+  Encountered problems while solving:
+    - package python-3.13.12-hc97d973_100_cp313 requires python_abi 3.13.* *_cp313, but none of the providers can be installed
+
+  Could not solve for environment specs
+  The following packages are incompatible
+   [32mnumpy >=1.7,<1.20 *[0m is installable with the potential options
+     [32mnumpy [1.10.4|1.11.0|...|1.9.3][0m would require
+       [32mpython_abi =* *_cp34m[0m, which can be installed;
+     [32mnumpy [1.10.4|1.11.0|...|1.9.3][0m would require
+       [32mpython_abi =* *_cp27mu[0m, which can be installed;
+     [32mnumpy [1.10.4|1.11.0|...|1.9.3][0m would require
+       [32mpython_abi =* *_cp35m[0m, which can be installed;
+     [32mnumpy [1.10.4|1.11.3|...|1.9.3][0m would require
+       [32mpython_abi =* *_cp36m[0m, which can be installed;
+     [32mnumpy [1.11.3|1.14.5|...|1.9.3][0m would require
+       [32mpython_abi =* *_cp37m[0m, which can be installed;
+     [32mnumpy [1.14.6|1.16.5|1.17.3|1.17.5|1.18.1][0m would require
+       [32mpython_abi =* *_cp38[0m, which can be installed;
+     [32mnumpy [1.16.5|1.16.6|...|1.19.5][0m would require
+       [32mpython >=3.6,<3.7.0a0 *[0m with the potential options
+          [32mpython [3.6.0|3.6.1|...|3.6.9][0m, which can be installed;
+          [32mpython 3.6.12[0m would require
+             [32mpypy3.6 =7.3.3 *[0m, which requires
+                [32mpython =3.6 *_73_pypy[0m, which can be installed;
+     [32mnumpy [1.16.5|1.16.6|...|1.19.5][0m would require
+       [32mpython >=3.7,<3.8.0a0 *[0m, which can be installed;
+     [32mnumpy [1.16.5|1.16.6|...|1.19.5][0m would require
+       [32mpython >=3.8,<3.9.0a0 *[0m, which can be installed;
+     [32mnumpy [1.18.1|1.18.4|...|1.19.5][0m would require
+       [32mpypy3.6 >=7.3.3 *[0m, which can be installed (as previously explained);
+       [32mpython_abi ==3.6 *_pypy36_pp73[0m, which requires
+          [32mpython =3.6 *_73_pypy[0m, which can be installed;
+     [32mnumpy [1.19.2|1.19.4|1.19.5][0m would require
+       [32mpython >=3.9,<3.10.0a0 *[0m, which can be installed;
+     [32mnumpy 1.19.5[0m would require
+       [32mpython_abi ==3.7 *_pypy37_pp73[0m, which requires
+          [32mpython =3.7 *_73_pypy[0m, which can be installed;
+     [32mnumpy 1.19.5[0m would require
+       [32mpython_abi ==3.8 *_pypy38_pp73[0m, which requires
+          [32mpython =3.8 *_73_pypy[0m, which can be installed;
+     [32mnumpy 1.19.5[0m would require
+        [32mpython_abi ==3.9 *_pypy39_pp73[0m, which requires
+           [32mpython =3.9 *_73_pypy[0m, which can be installed;
+   [31mpython =3.13 *_cp313[0m is not installable because it requires
+      [31mpython_abi =3.13 *_cp313[0m, which conflicts with any installable versions previously reported.
+# Last 100 lines of the build log.
