@@ -23,21 +23,21 @@ log: |2-
     125 |   for (auto& i : *pspanv)
         |                   ^~~~~~
         |                   std::begin
-  In file included from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/string:53,
-                   from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/locale_classes.h:40,
-                   from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/ios_base.h:41,
-                   from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/ios:44,
-                   from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/ostream:40,
-                   from /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/iostream:41,
+  In file included from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/string:53,
+                   from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/locale_classes.h:40,
+                   from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/ios_base.h:41,
+                   from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/ios:44,
+                   from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/ostream:40,
+                   from /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/iostream:41,
                    from Histogram.h:4:
-  /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:95:5: note: 'std::begin' declared here
+  /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:95:5: note: 'std::begin' declared here
      95 |     begin(_Tp (&__arr)[_Nm]) noexcept
         |     ^~~~~
   Histogram.cpp:125:19: error: 'end' was not declared in this scope; did you mean 'std::end'?
     125 |   for (auto& i : *pspanv)
         |                   ^~~~~~
         |                   std::end
-  /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:106:5: note: 'std::end' declared here
+  /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:106:5: note: 'std::end' declared here
     106 |     end(_Tp (&__arr)[_Nm]) noexcept
         |     ^~~
   Histogram.cpp:136:40: error: request for member 'size' in '* pspanv', which is of non-class type 'int'
@@ -50,14 +50,14 @@ log: |2-
     145 |   for (auto& span : *pspanv) {
         |                      ^~~~~~
         |                      std::begin
-  /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:95:5: note: 'std::begin' declared here
+  /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:95:5: note: 'std::begin' declared here
      95 |     begin(_Tp (&__arr)[_Nm]) noexcept
         |     ^~~~~
   Histogram.cpp:145:22: error: 'end' was not declared in this scope; did you mean 'std::end'?
     145 |   for (auto& span : *pspanv) {
         |                      ^~~~~~
         |                      std::end
-  /opt/conda/conda-bld/variantbam_1773254283330/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:106:5: note: 'std::end' declared here
+  /opt/conda/conda-bld/variantbam_1773258428986/_build_env/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c/bits/range_access.h:106:5: note: 'std::end' declared here
     106 |     end(_Tp (&__arr)[_Nm]) noexcept
         |     ^~~
   Histogram.cpp:151:47: error: 'last_span' was not declared in this scope
@@ -82,7 +82,7 @@ log: |2-
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
       raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/variantbam_1773254283330/work/conda_build.sh']' returned non-zero exit status 2.
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/variantbam_1773258428986/work/conda_build.sh']' returned non-zero exit status 2.
 
   The above exception was the direct cause of the following exception:
 
@@ -100,5 +100,5 @@ log: |2-
                            ^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/variantbam_1773254283330/work/conda_build.sh']' returned non-zero exit status 2.
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/variantbam_1773258428986/work/conda_build.sh']' returned non-zero exit status 2.
 # Last 100 lines of the build log.
