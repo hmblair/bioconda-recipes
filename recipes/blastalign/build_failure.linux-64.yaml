@@ -1,13 +1,13 @@
 recipe_sha: b5bf8a322e67d1f4e608c9c457f1d25ea8b7778c06b27dce731c7206de45a1a2  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: true # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
 log: |-
-  2026-03-11T20:20:21 Subdir: noarch Gathering repodata
-  2026-03-11T20:20:21 noarch Writing pre-patch repodata
-  2026-03-11T20:20:21 noarch Applying patch instructions
-  2026-03-11T20:20:21 noarch Writing patched repodata
-  2026-03-11T20:20:21 noarch Building current_repodata subset
-  2026-03-11T20:20:21 noarch Writing current_repodata subset
-  2026-03-11T20:20:21 noarch Writing index HTML
+  2026-03-11T23:05:09 Subdir: noarch Gathering repodata
+  2026-03-11T23:05:09 noarch Writing pre-patch repodata
+  2026-03-11T23:05:09 noarch Applying patch instructions
+  2026-03-11T23:05:09 noarch Writing patched repodata
+  2026-03-11T23:05:09 noarch Building current_repodata subset
+  2026-03-11T23:05:09 noarch Writing current_repodata subset
+  2026-03-11T23:05:09 noarch Writing index HTML
   /opt/conda/lib/python3.12/site-packages/conda_build/cli/main_build.py:518: UserWarning: RECIPE_PATH received is a file (/opt/recipe/meta.yaml).
   It should be a path to a folder.
   Forcing conda-build to use the recipe file.
@@ -28,7 +28,7 @@ log: |-
 
   ## Package Plan ##
 
-    environment location: /opt/conda/conda-bld/blastalign_1773260423139/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
+    environment location: /opt/conda/conda-bld/blastalign_1773270310636/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
 
 
   The following NEW packages will be INSTALLED:
@@ -47,7 +47,7 @@ log: |-
 
   ## Package Plan ##
 
-    environment location: /opt/conda/conda-bld/blastalign_1773260423139/_build_env
+    environment location: /opt/conda/conda-bld/blastalign_1773270310636/_build_env
 
 
   The following NEW packages will be INSTALLED:
@@ -100,5 +100,5 @@ log: |-
                               ^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/source.py", line 129, in download_to_cache
       raise RuntimeError(
-  RuntimeError: SHA256 mismatch for BlastAlign.tar: obtained '2493c335a18836137128807d3031a626b0b850986eb8d93aecae3d90daba84c6' != expected '20cd6895dc949d3aeafd14dcf18f2678d9ed24fdcaeddd9ace3e9862d84f106d'
+  RuntimeError: SHA256 mismatch for BlastAlign.tar: obtained 'ff2fa82cae5e302f1361de79897b6a6fc2eb44d105ac4f1ab255263a3f2a874f' != expected '20cd6895dc949d3aeafd14dcf18f2678d9ed24fdcaeddd9ace3e9862d84f106d'
 # Last 100 lines of the build log.
