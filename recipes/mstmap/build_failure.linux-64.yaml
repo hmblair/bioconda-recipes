@@ -20,7 +20,7 @@ log: |-
 
   ## Package Plan ##
 
-    environment location: /opt/conda/conda-bld/mstmap_1773268861628/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
+    environment location: /opt/conda/conda-bld/mstmap_1773273467544/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
 
 
   The following NEW packages will be INSTALLED:
@@ -40,7 +40,7 @@ log: |-
 
   ## Package Plan ##
 
-    environment location: /opt/conda/conda-bld/mstmap_1773268861628/_build_env
+    environment location: /opt/conda/conda-bld/mstmap_1773273467544/_build_env
 
 
   The following NEW packages will be INSTALLED:
@@ -73,7 +73,7 @@ log: |-
   Downloading source to cache: mstmap_v1_8a84c4607e.tar.gz
   Downloading http://www.cs.ucr.edu/~stelo/pub/mstmap_v1.tar.gz
   WARNING: Error: HTTP 404 NOT FOUND for url <http://www.cs.ucr.edu/~stelo/pub/mstmap_v1.tar.gz>
-  Elapsed: 00:00.717364
+  Elapsed: 00:00.458305
 
   An HTTP error occurred when trying to retrieve this URL.
   HTTP errors are often intermittent, and a simple retry will get you on your way.
