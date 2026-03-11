@@ -47,7 +47,7 @@ log: |-
   CXX_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c
   DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/guidescan-2.2.1 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
   GXX=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-g
-   mkdir -p /opt/conda/conda-bld/guidescan_1773257681338/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin
+   mkdir -p /opt/conda/conda-bld/guidescan_1773258566983/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin
    mkdir -p build
    cd build
    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15
@@ -82,7 +82,7 @@ log: |-
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
       raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/guidescan_1773257681338/work/conda_build.sh']' returned non-zero exit status 1.
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/guidescan_1773258566983/work/conda_build.sh']' returned non-zero exit status 1.
 
   The above exception was the direct cause of the following exception:
 
@@ -100,5 +100,5 @@ log: |-
                            ^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/guidescan_1773257681338/work/conda_build.sh']' returned non-zero exit status 1.
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/guidescan_1773258566983/work/conda_build.sh']' returned non-zero exit status 1.
 # Last 100 lines of the build log.
