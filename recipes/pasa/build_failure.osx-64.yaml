@@ -1,23 +1,6 @@
 recipe_sha: e36fc004df4bd34c0a06e946a0d4cbf455f7e56ba263084d1530037aa42daea0  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: false # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
-log: |2-
-      - ucsc-blat
-      - slclust
-      - perl-db_file
-      - minimap2 >=2.22
-      - samtools
-      - perl
-    host:
-      - libcxx 22.1.1 h19cb2f5_0
-  test:
-    commands:
-      - Launch_PASA_pipeline.pl --version 2>&1 | grep "^PASA version:"
-      - cln2qual 2>&1 | grep "cln2qual <cln_report> <qual_file>"
-      - 'mdust -h 2>&1 | grep "Usage: mdust"'
-      - pasa 2>&1 | grep "Usage:.*pasa"
-      - seqclean -h 2>&1 | grep "seqclean <seqfile>"
-      - trimpoly -h 2>&1 | grep "Usage:"
-      - fasta 2>&1 | grep "^ version:"
+log: |-
   about:
     home: https://github.com/PASApipeline/PASApipeline
     license: BSD-3-Clause
@@ -40,10 +23,10 @@ log: |2-
     copy_test_source_files: true
 
 
-  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/pasa_1773262830931/work
-  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773262830931/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold
-  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773262830931/_build_env
-  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773262830931/work
+  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/pasa_1773304311734/work
+  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773304311734/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold
+  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773304311734/_build_env
+  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/pasa_1773304311734/work
   INFO: activate_cctools_osx-64.sh made the following environmental changes:
   AR=x86_64-apple-darwin13.4.0-ar
   AS=x86_64-apple-darwin13.4.0-as
@@ -100,5 +83,22 @@ log: |2-
   x86_64-apple-darwin13.4.0-clang -O3  -c cdna_alignment.cpp -o cdna_alignment.o
   x86_64-apple-darwin13.4.0-clang -O3  -c common_subs.cpp -o common_subs.o
   x86_64-apple-darwin13.4.0-clang -O3  -c cdna_alignment_assembler.cpp -o cdna_alignment_assembler.o
+  x86_64-apple-darwin13.4.0-clang -O3  -c Lobject.cpp -o Lobject.o
+  x86_64-apple-darwin13.4.0-clang -O3  -c stringFuncts.cpp -o stringFuncts.o
+  x86_64-apple-darwin13.4.0-clang -O3  -c pasa.cpp -o pasa.o
+  x86_64-apple-darwin13.4.0-clang -O3  -c argProcessor.cpp -o argProcessor.o
+  x86_64-apple-darwin13.4.0-clang -o ./pasa alignment_segment.o cdna_alignment.o common_subs.o  cdna_alignment_assembler.o Lobject.o stringFuncts.o pasa.o argProcessor.o -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,$PREFIX/lib -L$PREFIX/lib
   make[1]: Leaving directory '$SRC_DIR/pasa_cpp'
+  cd pasa-plugins/seqclean/mdust && make && cp mdust ../../../bin
+  make[1]: Entering directory '$SRC_DIR/pasa-plugins/seqclean/mdust'
+  x86_64-apple-darwin13.4.0-clang -O2 -Wall -c mdust.c -o mdust.o
+  x86_64-apple-darwin13.4.0-clang -O2 -Wall -c dust.c -o dust.o
+  x86_64-apple-darwin13.4.0-clang -O2 -Wall -c fastafile.c -o fastafile.o
+  x86_64-apple-darwin13.4.0-clang  -o mdust mdust.o dust.o fastafile.o
+  make[1]: Leaving directory '$SRC_DIR/pasa-plugins/seqclean/mdust'
+  cd pasa-plugins/seqclean/psx && make && cp psx ../../../bin
+  make[1]: Entering directory '$SRC_DIR/pasa-plugins/seqclean/psx'
+  x86_64-apple-darwin13.4.0-clang -O2 -c psx.c -o psx.o
+  x86_64-apple-darwin13.4.0-clang -O2 -c child_dir.c -o child_dir.o
+  make[1]: Leaving directory '$SRC_DIR/pasa-plugins/seqclean/psx'
 # Last 100 lines of the build log.
