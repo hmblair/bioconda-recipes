@@ -1,19 +1,19 @@
 recipe_sha: d174c3082a9332788afc765e41c08050872a506bc099a0e666c9aa3a42457aea  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: true # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
 log: |-
-  2026-03-11T23:27:41 linux-aarch64 Writing pre-patch repodata
-  2026-03-11T23:27:41 linux-aarch64 Applying patch instructions
-  2026-03-11T23:27:41 linux-aarch64 Writing patched repodata
-  2026-03-11T23:27:41 linux-aarch64 Building current_repodata subset
-  2026-03-11T23:27:41 linux-aarch64 Writing current_repodata subset
-  2026-03-11T23:27:41 linux-aarch64 Writing index HTML
-  2026-03-11T23:27:41 Subdir: noarch Gathering repodata
-  2026-03-11T23:27:41 noarch Writing pre-patch repodata
-  2026-03-11T23:27:41 noarch Applying patch instructions
-  2026-03-11T23:27:41 noarch Writing patched repodata
-  2026-03-11T23:27:41 noarch Building current_repodata subset
-  2026-03-11T23:27:41 noarch Writing current_repodata subset
-  2026-03-11T23:27:41 noarch Writing index HTML
+  2026-03-12T00:30:30 linux-aarch64 Writing pre-patch repodata
+  2026-03-12T00:30:30 linux-aarch64 Applying patch instructions
+  2026-03-12T00:30:30 linux-aarch64 Writing patched repodata
+  2026-03-12T00:30:30 linux-aarch64 Building current_repodata subset
+  2026-03-12T00:30:30 linux-aarch64 Writing current_repodata subset
+  2026-03-12T00:30:30 linux-aarch64 Writing index HTML
+  2026-03-12T00:30:30 Subdir: noarch Gathering repodata
+  2026-03-12T00:30:30 noarch Writing pre-patch repodata
+  2026-03-12T00:30:30 noarch Applying patch instructions
+  2026-03-12T00:30:30 noarch Writing patched repodata
+  2026-03-12T00:30:30 noarch Building current_repodata subset
+  2026-03-12T00:30:30 noarch Writing current_repodata subset
+  2026-03-12T00:30:30 noarch Writing index HTML
   /opt/conda/lib/python3.12/site-packages/conda_build/cli/main_build.py:518: UserWarning: RECIPE_PATH received is a file (/opt/recipe/meta.yaml).
   It should be a path to a folder.
   Forcing conda-build to use the recipe file.
@@ -34,7 +34,7 @@ log: |-
 
   ## Package Plan ##
 
-    environment location: /opt/conda/conda-bld/viromeqc_1773271662246/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+    environment location: /opt/conda/conda-bld/viromeqc_1773275431735/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
 
 
   The following NEW packages will be INSTALLED:
@@ -73,7 +73,7 @@ log: |-
   Downloading source to cache: viromeqc1.0.2_e4da8944f6.tar.gz
   Downloading https://github.com/CarsonJM/viromeqc/releases/download/1.0.2/viromeqc1.0.2.tar.gz
   WARNING: Error: HTTP 404 NOT FOUND for url <https://github.com/CarsonJM/viromeqc/releases/download/1.0.2/viromeqc1.0.2.tar.gz>
-  Elapsed: 00:00.089715
+  Elapsed: 00:00.206784
 
   An HTTP error occurred when trying to retrieve this URL.
   HTTP errors are often intermittent, and a simple retry will get you on your way.
