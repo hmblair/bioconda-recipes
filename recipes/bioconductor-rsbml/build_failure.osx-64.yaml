@@ -3,31 +3,27 @@ skiplist: false # Set to true to skiplist this recipe so that it will be ignored
 log: |2-
         |                         ^
   13 errors generated.
-  make: *** [/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773353197036/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/etc/Makeconf:211: layoutWrappers.o] Error 1
+  make: *** [/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773424511358/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/etc/Makeconf:211: layoutWrappers.o] Error 1
   ERROR: compilation failed for package rsbml
-  * removing /opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773353197036/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library/rsbml
+  * removing /opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773424511358/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library/rsbml
   CPP_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang-cpp
-  CPPFLAGS=-D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -D_FORTIFY_SOURCE=2 -DNDEBUG -isystem $PREFIX/include -mmacosx-version-min=11.3
   Traceback (most recent call last):
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2570, in build
+  CPPFLAGS=-D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -D_FORTIFY_SOURCE=2 -DNDEBUG -isystem $PREFIX/include -mmacosx-version-min=11.3
   DEBUG_CFLAGS=-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -Og -g -Wall -Wextra -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/bioconductor-rsbml-2.68.0 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -Og -g -Wall -Wextra -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/bioconductor-rsbml-2.68.0 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
   LDFLAGS_LD=-headerpad_max_install_names -dead_strip_dylibs -rpath $PREFIX/lib -L$PREFIX/lib -headerpad_max_install_names -dead_strip_dylibs -rpath $PREFIX/lib -L$PREFIX/lib
   LDFLAGS=-Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,$PREFIX/lib -L$PREFIX/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,$PREFIX/lib -L$PREFIX/lib
   OBJC_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang
   INFO: activate_clangxx_osx-64.sh made the following environmental changes:
-      utils.check_call_env(
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
-      return _func_defaulting_env_to_os_environ("call", *popenargs, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
   -CXX_FOR_BUILD=$PREFIX/bin/x86_64-apple-darwin13.4.0-clang
   CXX_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang
   checking for x86_64-apple-darwin13.4.0-pkg-config... no
   checking for pkg-config... /usr/local/bin/pkg-config
   checking pkg-config is at least version 0.9.0... yes
-      raise subprocess.CalledProcessError(proc.returncode, _args)
   checking for LIBSBML... yes
   configure: === Begin local SOSLib build ===
+      utils.check_call_env(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
   checking for a BSD-compatible install... /usr/bin/install -c
   checking whether build environment is sane... yes
   checking for a thread-safe mkdir -p... config/install-sh -c -d
@@ -36,9 +32,20 @@ log: |2-
   checking for nawk... no
   checking for awk... awk
   checking whether make sets $(MAKE)... yes
+      return _func_defaulting_env_to_os_environ("call", *popenargs, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
   checking build system type... x86_64-apple-darwin13.4.0
   checking host system type... x86_64-apple-darwin13.4.0
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773353197036/work/conda_build.sh']' returned non-zero exit status 1.
+  checking for C compiler default output file name... a.out
+  checking whether the C compiler works... yes
+  checking whether we are cross compiling... no
+  checking for suffix of executables...
+  checking for suffix of object files... o
+  checking whether we are using the GNU C compiler... yes
+  checking whether x86_64-apple-darwin13.4.0-clang accepts -g... yes
+      raise subprocess.CalledProcessError(proc.returncode, _args)
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773424511358/work/conda_build.sh']' returned non-zero exit status 1.
 
   The above exception was the direct cause of the following exception:
 
@@ -46,31 +53,24 @@ log: |2-
     File "/opt/mambaforge/envs/bioconda/bin/conda-build", line 11, in <module>
       sys.exit(execute())
                ^^^^^^^^^
-  checking for C compiler default output file name... a.out
-  checking whether the C compiler works... yes
-  checking whether we are cross compiling... no
-  checking for suffix of executables...
-  checking for suffix of object files... o
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/cli/main_build.py", line 622, in execute
       api.build(
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
       return build_tree(
-  checking whether we are using the GNU C compiler... yes
-  checking whether x86_64-apple-darwin13.4.0-clang accepts -g... yes
-  checking for style of include used by make... GNU
-  checking dependency style of x86_64-apple-darwin13.4.0-clang... gcc3
-  checking for x86_64-apple-darwin13.4.0-gcc... x86_64-apple-darwin13.4.0-clang
-  checking whether we are using the GNU C compiler... yes
-  checking whether x86_64-apple-darwin13.4.0-clang accepts -g... yes
              ^^^^^^^^^^^
-  checking for x86_64-apple-darwin13.4.0-clang option to accept ISO C89... none needed
+  checking for style of include used by make... GNU
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3669, in build_tree
       packages_from_this = build(
+  checking dependency style of x86_64-apple-darwin13.4.0-clang... gcc3
                            ^^^^^^
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773353197036/work/conda_build.sh']' returned non-zero exit status 1.
+  checking for x86_64-apple-darwin13.4.0-gcc... x86_64-apple-darwin13.4.0-clang
+  checking whether we are using the GNU C compiler... yes
+  checking whether x86_64-apple-darwin13.4.0-clang accepts -g... yes
+  checking for x86_64-apple-darwin13.4.0-clang option to accept ISO C89... none needed
   checking dependency style of x86_64-apple-darwin13.4.0-clang... gcc3
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-rsbml_1773424511358/work/conda_build.sh']' returned non-zero exit status 1.
   checking whether x86_64-apple-darwin13.4.0-clang accepts -fpic... yes
   checking how to run the C preprocessor... x86_64-apple-darwin13.4.0-clang-cpp
   checking for x86_64-apple-darwin13.4.0-ranlib... x86_64-apple-darwin13.4.0-ranlib
