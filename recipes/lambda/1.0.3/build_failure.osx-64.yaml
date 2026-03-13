@@ -1,40 +1,44 @@
 recipe_sha: b1465c444db93c5d16427e7cb402f933f7421eb8c4c37cbfd06beef445682283  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: false # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
 log: |2-
-      - ld64_osx-64 956.6 llvm19_1_hcae3351_4
-      - libev 4.33 h10d778d_2
+      - cctools_impl_osx-64 1030.6.3 llvm19_1_h7d82c7c_4
+      - clang 19.1.7 default_h1323312_8
+      - compiler-rt_osx-64 19.1.7 h138dee1_1
+      - clang_osx-64 19.1.7 h8a78ed7_31
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
+      return build_tree(
+             ^^^^^^^^^^^
+      - ca-certificates 2026.2.25 hbd8a1cb_0
+      - clangxx 19.1.7 default_h9089c59_8
+      - tapi 1600.0.11.8 h8d8e812_0
+      - libsigtool 0.1.3 hc0f2934_0
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3669, in build_tree
+      packages_from_this = build(
+                           ^^^^^^
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
+      raise BuildScriptException(str(exc), caused_by=exc) from exc
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773424151814/work/conda_build.sh']' returned non-zero exit status 1.
+      - libllvm19 19.1.7 h56e7563_2
+      - clangxx_osx-64 19.1.7 h8a78ed7_31
     host:
       - bzip2 1.0.8 h500dc9f_9
-  The above exception was the direct cause of the following exception:
-
-  Traceback (most recent call last):
       - libcxx 22.1.1 h19cb2f5_0
-    File "/opt/mambaforge/envs/bioconda/bin/conda-build", line 11, in <module>
-      sys.exit(execute())
-               ^^^^^^^^^
       - llvm-openmp 22.1.0 h0d3cbff_0
       - seqan-library 2.4.0 h694c41f_0
       - libzlib 1.3.1 hd23fc13_2
       - zlib 1.3.1 hd23fc13_2
     run:
-      - llvm-openmp >=22.1.0
-      - llvm-openmp >=19.1.7
-      - libzlib >=1.3.1,<2.0a0
-      - libcxx >=19
       - bzip2 >=1.0.8,<2.0a0
+      - llvm-openmp >=19.1.7
+      - llvm-openmp >=22.1.0
+      - libcxx >=19
+      - libzlib >=1.3.1,<2.0a0
   test:
     commands:
       - lambda --help
   about:
     home: http://seqan.github.io/lambda/
     license: GPLv3
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/cli/main_build.py", line 622, in execute
-      api.build(
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
-      return build_tree(
-             ^^^^^^^^^^^
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3669, in build_tree
-      packages_from_this = build(
     license_file: LICENSE-GPL3.rst
     summary: Lambda is a local aligner optimized for many query sequences and searches
       in protein space
@@ -43,13 +47,10 @@ log: |2-
     copy_test_source_files: true
 
 
-                           ^^^^^^
-  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/lambda_1773351908451/work
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
-  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773351908451/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho
-  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773351908451/_build_env
-  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773351908451/work
-      raise BuildScriptException(str(exc), caused_by=exc) from exc
+  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/lambda_1773424151814/work
+  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773424151814/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho
+  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773424151814/_build_env
+  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773424151814/work
   INFO: activate_cctools_osx-64.sh made the following environmental changes:
   AR=x86_64-apple-darwin13.4.0-ar
   AS=x86_64-apple-darwin13.4.0-as
@@ -58,7 +59,6 @@ log: |2-
   LD=x86_64-apple-darwin13.4.0-ld
   LIBTOOL=x86_64-apple-darwin13.4.0-libtool
   LIPO=x86_64-apple-darwin13.4.0-lipo
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/lambda_1773351908451/work/conda_build.sh']' returned non-zero exit status 1.
   NM=x86_64-apple-darwin13.4.0-nm
   NMEDIT=x86_64-apple-darwin13.4.0-nmedit
   OTOOL=x86_64-apple-darwin13.4.0-otool
