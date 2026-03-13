@@ -73,8 +73,8 @@ log: |2-
 
     CXX      runApiTests-AccessibilityConstraint_test.o
     CXX      runApiTests-AccessibilityFromStream_test.o
-    CXX      runApiTests-HelixConstraint_test.o
     CXX      runApiTests-AccessibilityBasePair_test.o
+    CXX      runApiTests-HelixConstraint_test.o
     CXX      runApiTests-HelixHandlerStackingOnly_test.o
     CXX      runApiTests-HelixHandlerStackingOnlyIdxOffset_test.o
     CXX      runApiTests-HelixHandlerStackingOnlySeed_test.o
