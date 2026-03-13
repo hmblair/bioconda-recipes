@@ -1,10 +1,9 @@
 recipe_sha: f08184ddccb1825107c6164685ef23dafa3b22311d7fcb7a81b3ccac6a010f28  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: false # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
 log: |-
-  SEG_ADDR_TABLE=arm64-apple-darwin20.0.0-seg_addr_table
-  SEG_HACK=arm64-apple-darwin20.0.0-seg_hack
-  SIZE=arm64-apple-darwin20.0.0-size
   STRINGS=arm64-apple-darwin20.0.0-strings
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
+      raise BuildScriptException(str(exc), caused_by=exc) from exc
   STRIP=arm64-apple-darwin20.0.0-strip
   INFO: activate_clang_osx-arm64.sh made the following environmental changes:
   CC=arm64-apple-darwin20.0.0-clang
@@ -32,15 +31,15 @@ log: |-
   Using pip 26.0.1 from $PREFIX/lib/python3.10/site-packages/pip (python 3.10)
   Non-user install because user site-packages disabled
   Ignoring indexes: https://pypi.org/simple
-  Created temporary directory: /private/tmp/pip-build-tracker-c5c1dfb7
-  Initialized build tracking at /private/tmp/pip-build-tracker-c5c1dfb7
-  Created build tracker: /private/tmp/pip-build-tracker-c5c1dfb7
-  Entered build tracker: /private/tmp/pip-build-tracker-c5c1dfb7
-  Created temporary directory: /private/tmp/pip-install-1mlu72u9
-  Created temporary directory: /private/tmp/pip-ephem-wheel-cache-qigtwwg6
+  Created temporary directory: /private/tmp/pip-build-tracker-m_p_69j5
+  Initialized build tracking at /private/tmp/pip-build-tracker-m_p_69j5
+  Created build tracker: /private/tmp/pip-build-tracker-m_p_69j5
+  Entered build tracker: /private/tmp/pip-build-tracker-m_p_69j5
+  Created temporary directory: /private/tmp/pip-install-e1xrz6up
+  Created temporary directory: /private/tmp/pip-ephem-wheel-cache-l5awoxys
   Processing ./.
-    Added file://$SRC_DIR to build tracker '/private/tmp/pip-build-tracker-c5c1dfb7'
-    Created temporary directory: /private/tmp/pip-modern-metadata-csvolibs
+    Added file://$SRC_DIR to build tracker '/private/tmp/pip-build-tracker-m_p_69j5'
+    Created temporary directory: /private/tmp/pip-modern-metadata-xhn69_q6
     Preparing metadata (pyproject.toml): started
     Preparing metadata (pyproject.toml): finished with status 'error'
   Exception information:
@@ -72,6 +71,7 @@ log: |-
       requirement_set = resolver.resolve(
     File "$PREFIX/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib/resolver.py", line 79, in resolve
       collected = self.factory.collect_root_requirements(root_reqs)
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/fast-edit-distance_1773419865462/work/conda_build.sh']' returned non-zero exit status 1.
     File "$PREFIX/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 538, in collect_root_requirements
       reqs = list(
     File "$PREFIX/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 494, in _make_requirements_from_install_req
@@ -99,6 +99,6 @@ log: |-
     File "$PREFIX/lib/python3.10/site-packages/pip/_internal/operations/build/metadata.py", line 36, in generate_metadata
       raise MetadataGenerationFailed(package_details=details) from error
   pip._internal.exceptions.MetadataGenerationFailed: metadata generation failed
-  Removed file://$SRC_DIR from build tracker '/private/tmp/pip-build-tracker-c5c1dfb7'
-  Removed build tracker: '/private/tmp/pip-build-tracker-c5c1dfb7'
+  Removed file://$SRC_DIR from build tracker '/private/tmp/pip-build-tracker-m_p_69j5'
+  Removed build tracker: '/private/tmp/pip-build-tracker-m_p_69j5'
 # Last 100 lines of the build log.
