@@ -15,15 +15,15 @@ log: |-
   Using pip 26.0.1 from $PREFIX/lib/python3.12/site-packages/pip (python 3.12)
   Non-user install because user site-packages disabled
   Ignoring indexes: https://pypi.org/simple
-  Created temporary directory: /private/tmp/pip-build-tracker-ksz3oqqe
-  Initialized build tracking at /private/tmp/pip-build-tracker-ksz3oqqe
-  Created build tracker: /private/tmp/pip-build-tracker-ksz3oqqe
-  Entered build tracker: /private/tmp/pip-build-tracker-ksz3oqqe
-  Created temporary directory: /private/tmp/pip-install-d5trfs1l
-  Created temporary directory: /private/tmp/pip-ephem-wheel-cache-xd_fjh31
+  Created temporary directory: /private/tmp/pip-build-tracker-5g5bxfav
+  Initialized build tracking at /private/tmp/pip-build-tracker-5g5bxfav
+  Created build tracker: /private/tmp/pip-build-tracker-5g5bxfav
+  Entered build tracker: /private/tmp/pip-build-tracker-5g5bxfav
+  Created temporary directory: /private/tmp/pip-install-sc1yx80y
+  Created temporary directory: /private/tmp/pip-ephem-wheel-cache-m_7mxg9_
   Processing ./.
-    Added file://$SRC_DIR to build tracker '/private/tmp/pip-build-tracker-ksz3oqqe'
-    Created temporary directory: /private/tmp/pip-modern-metadata-2aobhd67
+    Added file://$SRC_DIR to build tracker '/private/tmp/pip-build-tracker-5g5bxfav'
+    Created temporary directory: /private/tmp/pip-modern-metadata-01gm43ih
     Preparing metadata (pyproject.toml): started
     Preparing metadata (pyproject.toml): finished with status 'error'
   Exception information:
@@ -99,6 +99,6 @@ log: |-
     File "$PREFIX/lib/python3.12/site-packages/pip/_internal/operations/build/metadata.py", line 36, in generate_metadata
       raise MetadataGenerationFailed(package_details=details) from error
   pip._internal.exceptions.MetadataGenerationFailed: metadata generation failed
-  Removed file://$SRC_DIR from build tracker '/private/tmp/pip-build-tracker-ksz3oqqe'
-  Removed build tracker: '/private/tmp/pip-build-tracker-ksz3oqqe'
+  Removed file://$SRC_DIR from build tracker '/private/tmp/pip-build-tracker-5g5bxfav'
+  Removed build tracker: '/private/tmp/pip-build-tracker-5g5bxfav'
 # Last 100 lines of the build log.
