@@ -4,7 +4,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field l_text on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1130:20
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1130:20
        |
   1130 |             (*rec).l_text = l_text;
        |                    ^^^^^^ unknown field
@@ -12,7 +12,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field text on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1396:20
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1396:20
        |
   1396 |             (*rec).text = text as *mut c_char;
        |                    ^^^^ unknown field
@@ -20,7 +20,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field l_text on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1397:20
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1397:20
        |
   1397 |             (*rec).l_text = l_text;
        |                    ^^^^^^ unknown field
@@ -28,7 +28,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field n_targets on type &sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1446:22
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1446:22
        |
   1446 |         self.inner().n_targets as u32
        |                      ^^^^^^^^^ unknown field
@@ -36,7 +36,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field target_name on type &sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1451:48
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1451:48
        |
   1451 |             slice::from_raw_parts(self.inner().target_name, self.target_count() as usize)
        |                                                ^^^^^^^^^^^ unknown field
@@ -44,7 +44,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field n_targets on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1461:33
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1461:33
        |
   1461 |         if (tid as i32) < inner.n_targets {
        |                                 ^^^^^^^^^ unknown field
@@ -52,7 +52,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field target_len on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1463:54
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1463:54
        |
   1463 |                 unsafe { slice::from_raw_parts(inner.target_len, inner.n_targets as usize) };
        |                                                      ^^^^^^^^^^ unknown field
@@ -60,7 +60,7 @@ log: |2-
        = note: available field is: _address
 
   error[E0609]: no field n_targets on type sam_hdr_t
-      --> /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1463:72
+      --> /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/bam/mod.rs:1463:72
        |
   1463 |                 unsafe { slice::from_raw_parts(inner.target_len, inner.n_targets as usize) };
        |                                                                        ^^^^^^^^^ unknown field
@@ -71,8 +71,8 @@ log: |2-
   error: could not compile rust-htslib (lib) due to 11 previous errors
 
   Caused by:
-    process didn't exit successfully: rustc --crate-name rust_htslib --edition=2018 /opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="bzip2"' --cfg 'feature="curl"' --cfg 'feature="default"' --cfg 'feature="lzma"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("bindgen", "bzip2", "curl", "default", "gcs", "libdeflate", "lzma", "s3", "serde", "serde_bytes", "serde_feature", "static"))' -C metadata=e72a6981dd5448e5 -C extra-filename=-f76c361a538b7870 --out-dir /opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps --target aarch64-unknown-linux-gnu -C linker=/opt/conda/conda-bld/varlociraptor_1773419980428/_build_env/bin/aarch64-conda-linux-gnu-cc -C strip=debuginfo -L dependency=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps -L dependency=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/release/deps --extern bio_types=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libbio_types-945448630f616c64.rmeta --extern byteorder=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libbyteorder-4845dd9ebc5ac8b5.rmeta --extern custom_derive=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libcustom_derive-6f6205253e97d7ad.rmeta --extern derive_new=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/release/deps/libderive_new-5be30f1008adda25.so --extern hts_sys=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libhts_sys-eb5fd3df001b5f40.rmeta --extern ieee754=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libieee754-e4687dae22ea1bb2.rmeta --extern lazy_static=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/liblazy_static-51d479de5ed92a04.rmeta --extern libc=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/liblibc-234db9eb3f0330e4.rmeta --extern libz_sys=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/liblibz_sys-695c6fe2c4152458.rmeta --extern linear_map=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/liblinear_map-d5874e550693d67a.rmeta --extern newtype_derive=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libnewtype_derive-b30c5bc9d636dc17.rmeta --extern regex=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libregex-7312db401100a94a.rmeta --extern thiserror=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/libthiserror-3185eb19dd08e12b.rmeta --extern url=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/deps/liburl-a788dc11e3bbf41b.rmeta --cap-lints allow -C link-arg=-Wl,-rpath-link,/opt/conda/conda-bld/varlociraptor_1773419980428/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/lib -C link-arg=-Wl,-rpath,/opt/conda/conda-bld/varlociraptor_1773419980428/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/lib -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/hts-sys-ca2985aab38adab0/out -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/bzip2-sys-1e1683985a11071e/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/curl-sys-cf9a5bc16e7e231f/out/build -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/libz-sys-fd6e47b079576f8b/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/libz-sys-fd6e47b079576f8b/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/openssl-sys-595478a7655f77b5/out/openssl-build/install/lib -L native=/opt/conda/conda-bld/varlociraptor_1773419980428/work/target/aarch64-unknown-linux-gnu/release/build/lzma-sys-e71212051408a3a9/out (exit status: 1)
-  error: failed to compile varlociraptor v8.9.5 (/opt/conda/conda-bld/varlociraptor_1773419980428/work), intermediate artifacts can be found at /opt/conda/conda-bld/varlociraptor_1773419980428/work/target.
+    process didn't exit successfully: rustc --crate-name rust_htslib --edition=2018 /opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-htslib-0.49.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C linker-plugin-lto -C codegen-units=1 --cfg 'feature="bzip2"' --cfg 'feature="curl"' --cfg 'feature="default"' --cfg 'feature="lzma"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("bindgen", "bzip2", "curl", "default", "gcs", "libdeflate", "lzma", "s3", "serde", "serde_bytes", "serde_feature", "static"))' -C metadata=a78119e70715ac1a -C extra-filename=-9288d967c5745858 --out-dir /opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps --target aarch64-unknown-linux-gnu -C linker=/opt/conda/conda-bld/varlociraptor_1773473469091/_build_env/bin/aarch64-conda-linux-gnu-cc -C strip=debuginfo -L dependency=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps -L dependency=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/release/deps --extern bio_types=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libbio_types-8a29af9d41f8d6ac.rmeta --extern byteorder=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libbyteorder-92c10d860aee4ea2.rmeta --extern custom_derive=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libcustom_derive-c77029edcdf3c254.rmeta --extern derive_new=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/release/deps/libderive_new-5be30f1008adda25.so --extern hts_sys=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libhts_sys-48f9e0477758cf5e.rmeta --extern ieee754=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libieee754-59cb75160d014371.rmeta --extern lazy_static=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/liblazy_static-223077c19a9d6dc6.rmeta --extern libc=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/liblibc-6c31d9c1dc2f2aa9.rmeta --extern libz_sys=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/liblibz_sys-cdc25c8a28e171c6.rmeta --extern linear_map=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/liblinear_map-867378f7164c656d.rmeta --extern newtype_derive=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libnewtype_derive-be533db584cdd8bc.rmeta --extern regex=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libregex-05b3d070cb82aeaa.rmeta --extern thiserror=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/libthiserror-9faf43ad1ba1c253.rmeta --extern url=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/deps/liburl-83d108aad06b6734.rmeta --cap-lints allow -C link-arg=-Wl,-rpath-link,/opt/conda/conda-bld/varlociraptor_1773473469091/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/lib -C link-arg=-Wl,-rpath,/opt/conda/conda-bld/varlociraptor_1773473469091/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/lib -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/hts-sys-9f738b52a775e78b/out -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/bzip2-sys-b1db81013df428ef/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/curl-sys-b475d5ab54a7044b/out/build -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/libz-sys-1b72784223a347b9/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/libz-sys-1b72784223a347b9/out/lib -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/openssl-sys-5e614b17f11b0c38/out/openssl-build/install/lib -L native=/opt/conda/conda-bld/varlociraptor_1773473469091/work/target/aarch64-unknown-linux-gnu/release/build/lzma-sys-33eb09e5325404a0/out (exit status: 1)
+  error: failed to compile varlociraptor v8.9.5 (/opt/conda/conda-bld/varlociraptor_1773473469091/work), intermediate artifacts can be found at /opt/conda/conda-bld/varlociraptor_1773473469091/work/target.
   To reuse those artifacts with a future compilation, set the environment variable CARGO_TARGET_DIR to that path.
   Traceback (most recent call last):
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2570, in build
@@ -82,7 +82,7 @@ log: |2-
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
       raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/varlociraptor_1773419980428/work/conda_build.sh']' returned non-zero exit status 101.
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/varlociraptor_1773473469091/work/conda_build.sh']' returned non-zero exit status 101.
 
   The above exception was the direct cause of the following exception:
 
@@ -100,5 +100,5 @@ log: |2-
                            ^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/varlociraptor_1773419980428/work/conda_build.sh']' returned non-zero exit status 101.
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/varlociraptor_1773473469091/work/conda_build.sh']' returned non-zero exit status 101.
 # Last 100 lines of the build log.
