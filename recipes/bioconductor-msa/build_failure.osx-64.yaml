@@ -1,104 +1,104 @@
 recipe_sha: 6d2a14278924dfd89c7ef968a91443bdeae1b2538f3ed352094faddfe4eef547  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: false # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
-log: |-
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c stabilize.cpp -o stabilize.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c subfam.cpp -o subfam.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c subfams.cpp -o subfams.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c sw.cpp -o sw.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c termgaps.cpp -o termgaps.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c textfile.cpp -o textfile.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c threewaywt.cpp -o threewaywt.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c tomhydro.cpp -o tomhydro.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c traceback.cpp -o traceback.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c tracebackopt.cpp -o tracebackopt.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c tracebacksw.cpp -o tracebacksw.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c treefrommsa.cpp -o treefrommsa.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c typetostr.cpp -o typetostr.o
-  configure: error: in /opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773425968584/work/src/ClustalW':
-  configure: error: C compiler cannot create executables
-  See config.log' for more details.
-  using C compiler: clang version 14.0.6
-  using SDK: NA
-  pairwise/FullPairwiseAlign.cpp:7:14: fatal error: 'config.h' file not found
-      #include "config.h"
-               ^~~~~~~~~~
-  1 error generated.
-  make[2]: *** [/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773425968584/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/R/etc/Makeconf:211: pairwise/FullPairwiseAlign.o] Error 1
-  Warning message:
-  In system2("xcrun", "--show-sdk-version", TRUE, TRUE) :
-    running command ''xcrun' --show-sdk-version 2>&1' had status 1
-  make[1]: *** [msaMakefile:8: clustalw] Error 1
-  make: *** [Makevars:29: build_clustalw] Error 2
-  ERROR: compilation failed for package msa
-  * removing /opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773425968584/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/R/library/msa
-  Traceback (most recent call last):
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c upgma2.cpp -o upgma2.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c usage.cpp -o usage.o
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2570, in build
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c validateids.cpp -o validateids.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c vtml2.cpp -o vtml2.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c writescorefile.cpp -o writescorefile.o
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include    -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c RMuscle.cpp -o RMuscle.o
-      utils.check_call_env(
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L$PREFIX/lib/R/lib -Wl,-dead_strip_dylibs -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,$PREFIX/lib -L$PREFIX/lib -o libMuscle.so aligngivenpath.o aligngivenpathsw.o aligntwomsas.o aligntwoprofs.o aln.o alpha.o anchors.o bittraceback.o blosum62.o blosumla.o clust.o cluster.o clwwt.o color.o cons.o diaglist.o diffobjscore.o diffpaths.o difftrees.o difftreese.o distcalc.o distfunc.o distpwkimura.o domuscle.o dosp.o dpreglist.o drawtree.o edgelist.o enumopts.o enumtostr.o estring.o fasta.o fasta2.o fastclust.o fastdist.o fastdistjones.o fastdistkbit.o fastdistkmer.o fastdistmafft.o fastdistnuc.o fastscorepath2.o finddiags.o finddiagsn.o glbalign.o glbalign352.o glbaligndiag.o glbalignle.o glbalignsimple.o glbalignsp.o glbalignspn.o glbalignss.o glbalndimer.o globals.o globalslinux.o globalsosx.o globalsother.o globalswin32.o gonnet.o henikoffweight.o henikoffweightpb.o html.o hydro.o intmath.o local.o main.o makerootmsa.o makerootmsab.o maketree.o mhack.o mpam200.o msa.o msa2.o msadistkimura.o msf.o muscle.o muscleout.o nucmx.o nwdasimple.o nwdasimple2.o nwdasmall.o nwrec.o nwsmall.o objscore.o objscore2.o objscoreda.o onexception.o options.o outweights.o pam200mafft.o params.o phy.o phy2.o phy3.o phy4.o phyfromclust.o phyfromfile.o physeq.o phytofile.o posgap.o ppscore.o profdb.o profile.o profilefrommsa.o progalign.o progress.o progressivealign.o pwpath.o readmx.o realigndiffs.o realigndiffse.o refine.o refinehoriz.o refinesubfams.o refinetree.o refinetreee.o refinevert.o refinew.o savebest.o scoredist.o scoregaps.o scorehistory.o scorepp.o seq.o seqvect.o setblosumweights.o setgscweights.o setnewhandler.o spfast.o sptest.o stabilize.o subfam.o subfams.o sw.o termgaps.o textfile.o threewaywt.o tomhydro.o traceback.o tracebackopt.o tracebacksw.o treefrommsa.o typetostr.o upgma2.o usage.o validateids.o vtml2.o writescorefile.o RMuscle.o -L$PREFIX/lib/R/lib -lR
-  make[2]: Leaving directory '$SRC_DIR/src/Muscle'
-  ar rcs libMuscle.a aligngivenpath.o aligngivenpathsw.o aligntwomsas.o aligntwoprofs.o aln.o alpha.o anchors.o bittraceback.o blosum62.o blosumla.o clust.o cluster.o clwwt.o color.o cons.o diaglist.o diffobjscore.o diffpaths.o difftrees.o difftreese.o distcalc.o distfunc.o distpwkimura.o domuscle.o dosp.o dpreglist.o drawtree.o edgelist.o enumopts.o enumtostr.o estring.o fasta.o fasta2.o fastclust.o fastdist.o fastdistjones.o fastdistkbit.o fastdistkmer.o fastdistmafft.o fastdistnuc.o fastscorepath2.o finddiags.o finddiagsn.o glbalign.o glbalign352.o glbaligndiag.o glbalignle.o glbalignsimple.o glbalignsp.o glbalignspn.o glbalignss.o glbalndimer.o globals.o globalslinux.o globalsosx.o globalsother.o globalswin32.o gonnet.o henikoffweight.o henikoffweightpb.o html.o hydro.o intmath.o local.o main.o makerootmsa.o makerootmsab.o maketree.o mhack.o mpam200.o msa.o msa2.o msadistkimura.o msf.o muscle.o muscleout.o nucmx.o nwdasimple.o nwdasimple2.o nwdasmall.o nwrec.o nwsmall.o objscore.o objscore2.o objscoreda.o onexception.o options.o outweights.o pam200mafft.o params.o phy.o phy2.o phy3.o phy4.o phyfromclust.o phyfromfile.o physeq.o phytofile.o posgap.o ppscore.o profdb.o profile.o profilefrommsa.o progalign.o progress.o progressivealign.o pwpath.o readmx.o realigndiffs.o realigndiffse.o refine.o refinehoriz.o refinesubfams.o refinetree.o refinetreee.o refinevert.o refinew.o savebest.o scoredist.o scoregaps.o scorehistory.o scorepp.o seq.o seqvect.o setblosumweights.o setgscweights.o setnewhandler.o spfast.o sptest.o stabilize.o subfam.o subfams.o sw.o termgaps.o textfile.o threewaywt.o tomhydro.o traceback.o tracebackopt.o tracebacksw.o treefrommsa.o typetostr.o upgma2.o usage.o validateids.o vtml2.o writescorefile.o RMuscle.o
-  cp libMuscle.a ../
-  make[1]: Leaving directory '$SRC_DIR/src/Muscle'
-  ----------------------------------------
-  ---------------- MUSCLE ----------------
-  ----------------------------------------
-  --------- Compilation finished ---------
-  ----------------------------------------
-  make --file=msaMakefile --directory=ClustalW
-  make[1]: Entering directory '$SRC_DIR/src/ClustalW'
-  ./configure; \
-  cd src; \
-  export PKG_CXXFLAGS="-DHAVE_CONFIG_H -std=c14  -I.  -Wno-deprecated -Wno-unused-result"; \
-      return _func_defaulting_env_to_os_environ("call", *popenargs, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
-      raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773425968584/work/conda_build.sh']' returned non-zero exit status 1.
+log: |2-
+      liblzma-devel:             5.8.2-h11316ed_0              conda-forge
+      libnghttp2:                1.67.0-h3338091_0             conda-forge
+      libpng:                    1.6.55-h07817ec_0             conda-forge
+      libsigtool:                0.1.3-hc0f2934_0              conda-forge
+      libssh2:                   1.11.1-hed3591d_0             conda-forge
+      libtiff:                   4.7.1-ha0a348c_1              conda-forge
+      libwebp-base:              1.6.0-hb807250_0              conda-forge
+      libxml2:                   2.15.2-hd552753_0             conda-forge
+      libxml2-16:                2.15.2-h7a90416_0             conda-forge
+      libzlib:                   1.3.1-hd23fc13_2              conda-forge
+      llvm-openmp:               22.1.0-h0d3cbff_0             conda-forge
+      llvm-tools:                22.1.0-h1637cdf_0             conda-forge
+      llvm-tools-22:             22.1.0-hc181bea_0             conda-forge
+      make:                      4.4.1-h00291cd_2              conda-forge
+      mpc:                       1.3.1-h9d8efa1_1              conda-forge
+      mpfr:                      4.2.2-h31caf2d_0              conda-forge
+      ncurses:                   6.5-h0622a9a_3                conda-forge
+      openssl:                   3.6.1-hb6871ef_1              conda-forge
+      pango:                     1.56.4-h6ef8af8_0             conda-forge
+      pcre2:                     10.47-h13923f0_0              conda-forge
+      pixman:                    0.46.4-ha059160_1             conda-forge
+      r-base:                    4.5.3-h6422bf8_0              conda-forge
+      r-crayon:                  1.5.3-r45hc72bb7e_2           conda-forge
+      r-generics:                0.1.4-r45hc72bb7e_1           conda-forge
+      r-rcpp:                    1.1.1-r45hed9a748_0           conda-forge
+      readline:                  8.3-h68b038d_0                conda-forge
+      sdkroot_env_osx-64:        26.0-h62b880e_7               conda-forge
+      sigtool-codesign:          0.1.3-hc0f2934_0              conda-forge
+      tapi:                      1600.0.11.8-h8d8e812_0        conda-forge
+      tk:                        8.6.13-h7142dee_3             conda-forge
+      tktable:                   2.10-h2c093e9_7               conda-forge
+      tzdata:                    2025c-hc9c84f9_1              conda-forge
+      zlib:                      1.3.1-hd23fc13_2              conda-forge
+      zstd:                      1.5.7-h3eecb57_6              conda-forge
 
-  The above exception was the direct cause of the following exception:
+  Preparing transaction: ...working... done
+  Verifying transaction: ...working... done
+  Executing transaction: ...working... done
+  Reloading output folder: ...working... done
+  Solving environment (_build_env): ...working... done
+  Reloading output folder: ...working... done
+  Solving environment (_test_env): ...working... done
+
+  ## Package Plan ##
 
   Traceback (most recent call last):
+    environment location: /opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773478011817/_build_env
+
+
+  The following NEW packages will be INSTALLED:
+
+      autoconf:           2.72-pl5321had7229c_1     conda-forge
+      automake:           1.17-pl5321h694c41f_0     conda-forge
+      ca-certificates:    2026.2.25-hbd8a1cb_0      conda-forge
+      cctools_osx-64:     973.0.1-hcc6d90d_13       conda-forge
     File "/opt/mambaforge/envs/bioconda/bin/conda-build", line 11, in <module>
       sys.exit(execute())
                ^^^^^^^^^
+      clang:              14.0.6-h694c41f_1         conda-forge
+      clang-14:           14.0.6-default_hdb78580_1 conda-forge
+      clang_osx-64:       14.0.6-h3113cd8_6         conda-forge
+      clangxx:            14.0.6-default_hdb78580_1 conda-forge
+      clangxx_osx-64:     14.0.6-h6f97653_6         conda-forge
+      compiler-rt:        14.0.6-h613da45_0         conda-forge
+      compiler-rt_osx-64: 14.0.6-hab78ec2_0         conda-forge
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/cli/main_build.py", line 622, in execute
       api.build(
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
-  $PREFIX/lib/R/bin/R CMD SHLIB -o libClustalW.so pairwise/FullPairwiseAlign.cpp pairwise/FastPairwiseAlign.cpp fileInput/MSFFileParser.cpp fileInput/FileReader.cpp fileInput/PIRFileParser.cpp fileInput/RSFFileParser.cpp fileInput/GDEFileParser.cpp fileInput/InFileStream.cpp fileInput/ClustalFileParser.cpp fileInput/PearsonFileParser.cpp fileInput/FileParser.cpp fileInput/EMBLFileParser.cpp tree/UPGMA/RootedClusterTree.cpp tree/UPGMA/UPGMAAlgorithm.cpp tree/UPGMA/Node.cpp tree/UPGMA/RootedGuideTree.cpp tree/UPGMA/RootedTreeOutput.cpp tree/Tree.cpp tree/ClusterTree.cpp tree/TreeInterface.cpp tree/UnRootedClusterTree.cpp tree/ClusterTreeOutput.cpp tree/RandomGenerator.cpp tree/NJTree.cpp tree/AlignmentSteps.cpp interface/CommandLineParser.cpp substitutionMatrix/SubMatrix.cpp multipleAlign/Iteration.cpp multipleAlign/MSA.cpp multipleAlign/MyersMillerProfileAlign.cpp multipleAlign/ProfileStandard.cpp multipleAlign/ProfileWithSub.cpp multipleAlign/ProfileBase.cpp multipleAlign/LowScoreSegProfile.cpp general/OutputFile.cpp general/UserParameters.cpp general/Utility.cpp general/InvalidCombination.cpp general/DebugLog.cpp general/ClustalWResources.cpp general/VectorOutOfRange.cpp general/SymMatrix.cpp general/Stats.cpp Help.cpp alignment/Alignment.cpp alignment/AlignmentOutput.cpp alignment/ObjectiveScore.cpp alignment/Sequence.cpp Clustal.cpp RClustalWMain.cpp RClustalW.cpp && \
       return build_tree(
              ^^^^^^^^^^^
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3669, in build_tree
-  ar rcs libClustalW.a pairwise/FullPairwiseAlign.o pairwise/FastPairwiseAlign.o fileInput/MSFFileParser.o fileInput/FileReader.o fileInput/PIRFileParser.o fileInput/RSFFileParser.o fileInput/GDEFileParser.o fileInput/InFileStream.o fileInput/ClustalFileParser.o fileInput/PearsonFileParser.o fileInput/FileParser.o fileInput/EMBLFileParser.o tree/UPGMA/RootedClusterTree.o tree/UPGMA/UPGMAAlgorithm.o tree/UPGMA/Node.o tree/UPGMA/RootedGuideTree.o tree/UPGMA/RootedTreeOutput.o tree/Tree.o tree/ClusterTree.o tree/TreeInterface.o tree/UnRootedClusterTree.o tree/ClusterTreeOutput.o tree/RandomGenerator.o tree/NJTree.o tree/AlignmentSteps.o interface/CommandLineParser.o substitutionMatrix/SubMatrix.o multipleAlign/Iteration.o multipleAlign/MSA.o multipleAlign/MyersMillerProfileAlign.o multipleAlign/ProfileStandard.o multipleAlign/ProfileWithSub.o multipleAlign/ProfileBase.o multipleAlign/LowScoreSegProfile.o general/OutputFile.o general/UserParameters.o general/Utility.o general/InvalidCombination.o general/DebugLog.o general/ClustalWResources.o general/VectorOutOfRange.o general/SymMatrix.o general/Stats.o Help.o alignment/Alignment.o alignment/AlignmentOutput.o alignment/ObjectiveScore.o alignment/Sequence.o Clustal.o RClustalWMain.o RClustalW.o && \
-  cp libClustalW.a ../../
-  checking build system type... x86_64-apple-darwin13.4.0
-  checking host system type... x86_64-apple-darwin13.4.0
-  checking target system type... x86_64-apple-darwin13.4.0
-  building for darwin13.4.0
-  checking for a BSD-compatible install... /usr/bin/install -c
-  checking whether build environment is sane... yes
-  checking for a thread-safe mkdir -p... ./install-sh -c -d
-  checking for gawk... no
-  checking for mawk... no
-  checking for nawk... no
-  checking for awk... awk
-  checking whether make sets $(MAKE)... yes
-  checking whether make sets $(MAKE)... (cached) yes
-  checking for x86_64-apple-darwin13.4.0-gcc... x86_64-apple-darwin13.4.0-clang -std=gnu23
-  checking whether the C compiler works... no
-  make[2]: Entering directory '$SRC_DIR/src/ClustalW/src'
-  x86_64-apple-darwin13.4.0-clang -std=gnu17 -I"$PREFIX/lib/R/include" -DNDEBUG  -I'$PREFIX/lib/R/library/Rcpp/include' -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include   -I$PREFIX/include   -DHAVE_CONFIG_H -std=c14  -I.  -Wno-deprecated -Wno-unused-result -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc -fvisibility-inlines-hidden -fmessage-length=0 -isystem $PREFIX/include -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/r-base-split_1773227798222/work=/usr/local/src/conda/r-base-4.5.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix   -c pairwise/FullPairwiseAlign.cpp -o pairwise/FullPairwiseAlign.o
-  make[2]: Leaving directory '$SRC_DIR/src/ClustalW/src'
-  make[1]: Leaving directory '$SRC_DIR/src/ClustalW'
+      ld64_osx-64:        609-hfd63004_13           conda-forge
+      libclang-cpp14:     14.0.6-default_hdb78580_1 conda-forge
+      libcxx:             22.1.1-h19cb2f5_0         conda-forge
+      libllvm14:          14.0.6-hc8e404f_4         conda-forge
       packages_from_this = build(
                            ^^^^^^
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
-      raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/bioconductor-msa_1773425968584/work/conda_build.sh']' returned non-zero exit status 1.
+      libsigtool:         0.1.3-hc0f2934_0          conda-forge
+      libzlib:            1.3.1-hd23fc13_2          conda-forge
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2451, in build
+      create_build_envs(top_level_pkg, notest)
+      llvm-tools:         14.0.6-hc8e404f_4         conda-forge
+      m4:                 1.4.21-hf3981d6_0         conda-forge
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2295, in create_build_envs
+      environ.create_env(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/environ.py", line 1053, in create_env
+      make:               4.4.1-h00291cd_2          conda-forge
+      openssl:            3.6.1-hb6871ef_1          conda-forge
+      perl:               5.32.1-7_h10d778d_perl5   conda-forge
+      sigtool:            0.1.3-hc0f2934_0          conda-forge
+      sigtool-codesign:   0.1.3-hc0f2934_0          conda-forge
+      tapi:               1100.0.11-h9ce4665_0      conda-forge
+
+      _execute_actions(prefix, precs)
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/environ.py", line 1341, in _execute_actions
+      progressive_fetch_extract.execute()
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda/core/package_cache_data.py", line 913, in execute
+      raise CondaMultiError(not_cancelled)
+  conda.CondaMultiError: ('Connection broken: IncompleteRead(8744000 bytes read, 7152681 more expected)', IncompleteRead(8744000 bytes read, 7152681 more expected))
+  ('Connection broken: IncompleteRead(8744000 bytes read, 7152681 more expected)', IncompleteRead(8744000 bytes read, 7152681 more expected))
 # Last 100 lines of the build log.
