@@ -17,43 +17,43 @@ log: |2-
   make[2]: Entering directory '$SRC_DIR/auxprogs/compileSpliceCands'
   x86_64-apple-darwin13.4.0-clang -Wall -pedantic -ansi -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c compileSpliceCands.c
       utils.check_call_env(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3  -c -o list.o list.c
   x86_64-apple-darwin13.4.0-clang -o compileSpliceCands compileSpliceCands.o list.o;
-    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
+  cp compileSpliceCands ../../bin/compileSpliceCands
       return _func_defaulting_env_to_os_environ("call", *popenargs, **kwargs)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
-  cp compileSpliceCands ../../bin/compileSpliceCands
+      raise subprocess.CalledProcessError(proc.returncode, _args)
   make[2]: Leaving directory '$SRC_DIR/auxprogs/compileSpliceCands'
   cd filterBam; make;
   make[2]: Entering directory '$SRC_DIR/auxprogs/filterBam'
-      raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/augustus_1773423390551/work/conda_build.sh']' returned non-zero exit status 2.
+  (cd src;make)
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/augustus_1773475989047/work/conda_build.sh']' returned non-zero exit status 2.
 
+  make[3]: Entering directory '$SRC_DIR/auxprogs/filterBam/src'
+  x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c filterBam.cc -o filterBam.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
   The above exception was the direct cause of the following exception:
 
   Traceback (most recent call last):
     File "/opt/mambaforge/envs/bioconda/bin/conda-build", line 11, in <module>
       sys.exit(execute())
                ^^^^^^^^^
-  (cd src;make)
-  make[3]: Entering directory '$SRC_DIR/auxprogs/filterBam/src'
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/cli/main_build.py", line 622, in execute
       api.build(
-  x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c filterBam.cc -o filterBam.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
       return build_tree(
              ^^^^^^^^^^^
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3669, in build_tree
-  x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/MatePairs.cc -o MatePairs.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
       packages_from_this = build(
                            ^^^^^^
+  x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/MatePairs.cc -o MatePairs.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
     File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/augustus_1773475989047/work/conda_build.sh']' returned non-zero exit status 2.
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/getReferenceName.cc -o getReferenceName.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/initOptions.cc -o initOptions.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/SingleAlignment.cc -o SingleAlignment.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/augustus_1773423390551/work/conda_build.sh']' returned non-zero exit status 2.
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/printElapsedTime.cc -o printElapsedTime.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/sumMandIOperations.cc -o sumMandIOperations.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
   x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/augustus-3.3.3 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -std=c11 -Wall -O2  -D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3 -c functions/sumDandIOperations.cc -o sumDandIOperations.o -I$PREFIX/include/bamtools -Iheaders -I./bamtools
